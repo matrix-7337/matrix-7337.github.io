@@ -25,8 +25,8 @@ window.SITE_DATA = {
     skills: ['Linux', 'Cryptography', 'Forensics', 'Python', 'Bash', 'C', 'Sluethkit', 'Wireshark', 'kali' , 'Chips'],
     socials: [
       { label: 'GitHub', url: 'https://github.com/matrix-7337', icon: 'key' },
-      { label: 'Writeups', url: 'https://github.com/matrix-7337/WriteUPrepo', icon: 'book' },
-      { label: 'Twitter / X', url: 'https://x.com/YOUR_USERNAME', icon: 'banner' },
+      { label: 'Writeups', url: 'https://matrix-7337.github.io/blogs', icon: 'book' },
+      { label: 'Twitter / X', url: 'https://x.com/matrix7337', icon: 'banner' },
       { label: 'LinkedIn', url: 'https://linkedin.com/in/YOUR_USERNAME', icon: 'scroll' }
     ]
   },
