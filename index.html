@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A minimal pixel-art log of CTFs, projects, tools and certifications.">
+  <title>Pixel Quest Log</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try {
+      var queryTheme = new URLSearchParams(location.search).get('theme');
+      var savedTheme = queryTheme || localStorage.getItem('site-theme');
+      if (savedTheme === 'mint' || savedTheme === 'japanese') savedTheme = 'red';
+      if (savedTheme !== 'red' && savedTheme !== 'noir') savedTheme = 'red';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } catch (error) {}
+  </script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="theme-scenery" aria-hidden="true">
+    <svg class="temple temple-one" viewBox="0 0 260 200" shape-rendering="crispEdges">
+      <g fill="currentColor">
+        <rect x="126" y="8" width="8" height="22"/><circle cx="130" cy="8" r="5"/>
+        <path d="M60 48 L200 48 L182 36 L78 36 Z"/><rect x="84" y="48" width="92" height="26"/>
+        <path d="M44 78 L216 78 L196 64 L64 64 Z"/><rect x="72" y="78" width="116" height="30"/>
+        <path d="M28 112 L232 112 L210 96 L50 96 Z"/><rect x="56" y="112" width="148" height="34"/>
+        <path d="M12 150 L248 150 L224 132 L36 132 Z"/><rect x="40" y="150" width="180" height="40"/>
+        <rect x="0" y="190" width="260" height="10"/>
+      </g>
+    </svg>
+    <svg class="temple temple-two" viewBox="0 0 260 200" shape-rendering="crispEdges">
+      <g fill="currentColor">
+        <rect x="126" y="8" width="8" height="22"/><circle cx="130" cy="8" r="5"/>
+        <path d="M60 48 L200 48 L182 36 L78 36 Z"/><rect x="84" y="48" width="92" height="26"/>
+        <path d="M44 78 L216 78 L196 64 L64 64 Z"/><rect x="72" y="78" width="116" height="30"/>
+        <path d="M28 112 L232 112 L210 96 L50 96 Z"/><rect x="56" y="112" width="148" height="34"/>
+        <path d="M12 150 L248 150 L224 132 L36 132 Z"/><rect x="40" y="150" width="180" height="40"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="petals-layer" aria-hidden="true">
+    <div class="petals">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html#about" aria-label="Home">
+        <span class="brand-mark" id="brand-mark"></span>
+        <span>
+          <span class="brand-name" id="brand-name">Loading...</span>
+          <span class="brand-sub" id="brand-sub"></span>
+        </span>
+      </a>
+      <div class="header-tools">
+        <nav class="tabs" id="tabs" aria-label="Main sections"></nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M8 1.5a6.5 6.5 0 1 0 0 13 2 2 0 0 0 1.6-3.2 2 2 0 0 1 1.6-3.2H13A1.5 1.5 0 0 0 14.5 6.5 6.5 6.5 0 0 0 8 1.5Z"/>
+            <circle cx="4.8" cy="6.6" r="0.9" fill="currentColor" stroke="none"/>
+            <circle cx="7.6" cy="4.4" r="0.9" fill="currentColor" stroke="none"/>
+            <circle cx="10.8" cy="5.6" r="0.9" fill="currentColor" stroke="none"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="panel" class="fade-in"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand" id="footer-brand"></div>
+    </div>
+  </footer>
+</body>
+</html>
